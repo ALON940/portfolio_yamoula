@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A modern portfolio showcasing projects and skills">
-    <title>Portfolio | Dmatoti Yamoula</title>
+    <title>Portfolio | Dametoti Yamoula</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <span class="logo-text">Data Scientist & Researcher</span>
+                    <span class="logo-text" style="font-size: 32px; font-weight: bold;">Formation, Research & Expertise</span>
                 </div>
                 <button class="menu-toggle" aria-label="Toggle menu">
                     <span></span>
@@ -23,6 +23,7 @@
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#themes" class="nav-link">Themes</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -33,10 +34,41 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+
+        <div class="wave-extra"></div>
+        <div class="ocean-background">
+
+            <div class="particles">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="wave-container">
+                <svg class="wave wave1" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path fill="rgba(255,255,255,0.20)"
+                         d="M0,192L80,181.3C160,171,320,149,480,149.3C640,149,800,171,960,181.3C1120,192,1280,192,1360,192L1440,192V320H0Z">
+                    </path>
+                </svg>
+
+                <svg class="wave wave2" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path fill="rgba(255,255,255,0.10)"
+                         d="M0,224L80,202.7C160,181,320,139,480,122.7C640,107,800,117,960,144C1120,171,1280,213,1360,234.7L1440,256V320H0Z">
+                    </path>
+                 </svg>
+             </div>
+
+        </div>
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Dametoti Yamoula</h1>
-                <p class="hero-subtitle">PhD in Meteorology & Climate Sciences</p>
+                <p class="hero-subtitle" style="font-size: 20px; font-weight: bold;">
+                Data Scientist & Researcher in Ocean & Climate Sciences</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -50,13 +82,12 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
+                <div class="about-text">
+                    <p>As a data scientist specializing in meteorology and climate science, I have strong skills in analyzing oceanographic and atmospheric data and in predictive modelling of extreme events, using Artificial Intelligence (AI) tools.</p>
+                    <a href="assets/cv.pdf" class="btn btn-primary" download>Download My CV</a>
+                </div>
                 <div class="about-image">
                     <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img">
-                </div>
-                <div class="about-text">
-                    <p>I'm a passionate developer with a keen eye for design and a love for clean, efficient code. With expertise in web development, I bring ideas to life through innovative solutions and thoughtful user experiences.</p>
-                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the community.</p>
-                    <a href="assets/cv.pdf" class="btn btn-primary" download>Download My CV</a>
                 </div>
             </div>
             <div class="about-stats">
@@ -65,13 +96,66 @@
                     <p class="stat-label">Years Experience</p>
                 </div>
                 <div class="stat">
-                    <h3 class="stat-number">25+</h3>
+                    <h3 class="stat-number">7+</h3>
                     <p class="stat-label">Projects Completed</p>
                 </div>
                 <div class="stat">
-                    <h3 class="stat-number">50+</h3>
+                    <h3 class="stat-number">20+</h3>
                     <p class="stat-label">Happy Clients</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes Section -->
+    <section id="themes" class="projects">
+        <div class="container">
+            <h2 class="section-title">Research Themes</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ocean & Climate Dynamics</h3>
+                        <p class="project-description">Research on the complex relationships between oceanic and atmospheric processes, including their impact on climate systems and weather patterns.</p>
+                        <div class="project-tags">
+                            <span class="tag">Ocean and Atmosphere Interactions</span>
+                            <span class="tag">Ocean & Climate extremes</span>
+                            <span class="tag">Ocean & Climate Modeling</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Climate & Health</h3>
+                        <p class="project-description">Impacts of Atmospheric, Ocean & Climate Variables on Human Health.</p>
+                        <div class="project-tags">
+                            <span class="tag">HeatWaves & Human Health</span>
+                            <span class="tag">Climate changes & Human Health</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI in weather & climate sciences</h3>
+                        <p class="project-description">Investigation of extreme weather & climate events & their impacts on marine ecosystems and coastal communities.</p>
+                        <div class="project-tags">
+                            <span class="tag">AI in Atmospheric Science</span>
+                            <span class="tag">AI in Ocean Science</span>
+                            <span class="tag">AI Predictive Modeling</span>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
@@ -79,21 +163,24 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Feature Projects</h2>
             <div class="projects-grid">
                 <article class="project-card">
                     <div class="project-image">
                         <div class="image-placeholder"></div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Modern E-Commerce Platform</h3>
-                        <p class="project-description">A fully responsive e-commerce solution with advanced filtering, cart functionality, and seamless checkout experience.</p>
+                        <h3 class="project-title">Data Science Academy Group</h3>
+                        <p class="project-description">Collaborative platform for artificial intelligence and data science education and research, featuring interactive learning modules and real-world case studies.</p>
                         <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Management of AI projects</span>
+                            <span class="tag">Big Data Engineering</span>
+                            <span class="tag">Reinforcing Learning</span>
+                            <span class="tag">Generative AI models</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <a href="https://mabibliotheque.gamer.gd/index.php?i=1" class="project-link" target="_blank">View Project →</a>
                     </div>
                 </article>
 
@@ -103,13 +190,15 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Analytics Dashboard</h3>
-                        <p class="project-description">Real-time analytics dashboard with interactive charts, data visualization, and comprehensive reporting tools.</p>
+                        <p class="project-description">Real-time  analytics dashboard with interactive charts, atmospheric - oceanic - climate - health data analysis and visualization, modeling and comprehensive reporting tools.</p>
                         <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Chart.js</span>
-                            <span class="tag">REST API</span>
+                            <span class="tag">Linux(Ubuntu)</span>
+                            <span class="tag">Python programming language</span>
+                            <span class="tag">R programming language</span>
+                            <span class="tag">Fortran programming language</span>
+                            <span class="tag">Matlab programming language</span>
+                            <span class="tag">QGIS & ArcGIS</span>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
                     </div>
                 </article>
 
@@ -121,9 +210,11 @@
                         <h3 class="project-title">Social Media App</h3>
                         <p class="project-description">Feature-rich social platform with real-time messaging, notifications, and engaging user interactions.</p>
                         <div class="project-tags">
-                            <span class="tag">React Native</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">WebSocket</span>
+                            <span class="tag">Gmail API</span>
+                            <span class="tag">LinkedIn API</span>
+                            <span class="tag">Facebook API</span>
+                            <span class="tag">whatsapp API</span>
+                            <span class="tag">github API</span>
                         </div>
                         <a href="#" class="project-link">View Project →</a>
                     </div>
@@ -138,30 +229,47 @@
             <h2 class="section-title">Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3>Climate & Environmental Sciences</h3>
                     <ul>
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React & Vue.js</li>
-                        <li>Responsive Design</li>
+                        <li>Ocean & Climate Extremes</li>
+                        <li>Data Collection & Preprocessing</li>
+                        <li>Data Analysis</li>
+                        <li>Results dissimulations & Publications</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3>AI & Data Science</h3>
                     <ul>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>RESTful APIs</li>
-                        <li>Database Design</li>
+                        <li>Machine Learning & Deep Learning</li>
+                        <li>Big Data Analysis</li>
+                        <li>Dynamical & Predictive Modeling</li>
+                        <li>AI projects management</li>
+                        <li>Reinforcement Learning</li>
+                        <li>Generative AI models</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Others</h3>
+                    <h3>Tools</h3>
                     <ul>
+                        <li>Linux(Ubuntu)</li>
+                        <li>Python & R</li>
+                        <li>Fortran </li>
+                        <li>Matlab </li>
+                        <li>QGIS & ArcGIS</li>
                         <li>Git & GitHub</li>
-                        <li>Webpack & Babel</li>
-                        <li>Figma Design</li>
-                        <li>CI/CD Pipeline</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Others</h3>
+                    <ul>
+                        <li>Jupyter Hub</li>
+                        <li>VS Code</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Scikit-learn</li>
+                        <li>WRF model</li>
+                        <li>CROCO model</li>
                     </ul>
                 </div>
             </div>
@@ -169,49 +277,45 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Work Together</h2>
-            <p class="contact-subtitle">Have a project in mind? Let's discuss how we can collaborate.</p>
-            <div class="contact-content">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="contact-subtitle">Have a project in mind? Let's discuss how we can collaborate.</p>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Contact</h4>
+                    <div class="contact-actions">
+                        <a href="mailto:yamoulad.kankan@gmail.com" class="btn btn-primary">Email</a>
+                        <a href="https://wa.me/+22891946764" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+                        <a href="https://facebook.com/yourprofile" class="btn btn-primary" target="_blank" rel="noopener">Facebook</a>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h4>Email</h4>
-                        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Location</h4>
-                        <p>Your City, Country</p>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Social Links</h4>
-                        <div class="social-links">
-                            <a href="#" class="social-link">LinkedIn</a>
-                            <a href="#" class="social-link">GitHub</a>
-                            <a href="#" class="social-link">Twitter</a>
-                        </div>
+                </div>
+                <div class="contact-item">
+                    <h4>Location</h4>
+                    <p>Lome, TOGO</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Social Links</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/dametoti-yamoula-b87178253/" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://github.com/yamoula77" class="social-link" target="_blank" rel="noopener">GitHub</a> 
+                        <a href="https://twitter.com/yourprofile" class="social-link" target="_blank" rel="noopener">Twitter</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Charger ton script externe -->
+<script src="js/script.js"></script>
+
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2026 DSAG tech . All rights reserved.</p>
         </div>
     </footer>
 
