@@ -186,18 +186,40 @@ a {
 
 /* Hero Section */
 .hero {
+    position: relative;
     margin-top: 80px;
     padding: var(--spacing-2xl) 0;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.hero-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
 .hero-content {
+    position: relative;
+    z-index: 2;
     text-align: center;
-    animation: fadeInUp 0.8s ease;
+    color: white;
 }
 
 .hero-title {
@@ -209,9 +231,16 @@ a {
     background-clip: text;
 }
 
+.hero-titl{
+    color:#fefefe;
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    margin-bottom: var(--spacing-md);
+    
+}
+
 .hero-subtitle {
     font-size: var(--font-size-lg);
-    color: var(--text-secondary);
+    color: #F8FAFC;
     margin-bottom: var(--spacing-xl);
     max-width: 600px;
     margin-left: auto;
@@ -254,7 +283,13 @@ a {
     border: 2px solid var(--primary-color);
 }
 
-.btn-secondary:hover {
+.btn-secondar {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary:hover, .btn-secondar:hover {
     background: var(--primary-color);
     color: white;
 }
@@ -757,63 +792,4 @@ section {
 .hero .container {
     position: relative;
     z-index: 20;
-}
-
-/* BASE commune des vagues */
-.hero::before,
-.hero::after,
-.wave-extra,
-.wave-front {
-    content: "";
-    position: absolute;
-    left: -20%;
-    width: 140%;
-    border-radius: 50% 50% 0 0;
-    bottom: 0;
-    height: 0%; /* départ à 0% */
-    animation: waveRise 2s ease-in-out infinite;
-}
-
-/* ===== VAGUE 1 (arrière) ===== */
-.hero::before {
-    background: rgba(210, 240, 255, 0.6);
-    z-index: 1;
-    animation-delay: 0s;
-}
-
-/* ===== VAGUE 2 ===== */
-.hero::after {
-    background: rgba(170, 225, 250, 0.7);
-    z-index: 2;
-    animation-delay: 0.5s;
-}
-
-/* ===== VAGUE 3 ===== */
-.wave-extra {
-    background: rgba(120, 210, 245, 0.8);
-    z-index: 3;
-    animation-delay: 1s;
-}
-
-/* ===== VAGUE 4 (avant) ===== */
-.wave-front {
-    background: rgba(70, 190, 240, 0.9);
-    z-index: 4;
-    animation-delay: 1.5s;
-}
-
-/* ===== ANIMATION PRINCIPALE ===== */
-@keyframes waveRise {
-    0% {
-        height: 0%;
-        opacity: 0;
-    }
-    50% {
-        height: 45%;
-        opacity: 1;
-    }
-    100% {
-        height: 0%;
-        opacity: 0;
-    }
 }
